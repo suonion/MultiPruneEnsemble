@@ -124,7 +124,6 @@ All core parameters are defined at the top of **`run_pmlb.py`** and can be edite
 ├── checkpoints/     # Optional: saved models/weights (if used)
 ├── run_pmlb.py      # ★ Main entry point (supports --help)
 ├── utils.py         # Splits, metrics, calibration, misc helpers
-├── main.py          # Auxiliary entry (if used internally)
 └── __pycache__/     # Python bytecode cache
 ```
 
@@ -140,11 +139,5 @@ If this code is helpful in your research, please cite:
   author       = {Yin, Hanyang},
   year         = {2025},
   note         = {Project Bellerophon},
-  howpublished = {\url{https://github.com/<your-repo>}}
+  howpublished = {\url{https://github.com/suonion/MultiPruneEnsemble}}
 }
-```
-
----
-
-**Questions or issues?**  
-Open an issue with your command line, dataset name, and the console log.
