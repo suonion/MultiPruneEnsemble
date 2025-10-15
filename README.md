@@ -119,15 +119,13 @@ All core parameters are defined at the top of **`run_pmlb.py`** and can be edite
 ├── data/            # PMLB cache (created on first download)
 ├── methods/         # Pruning methods (e.g., MRMR / DISC / AUC-Greedy / EPIC / UMEP / Hybrid)
 ├── ensemble/        # Ensemble strategies (Equal-Average, Grad-Weighted)
-├── scripts/         # Batch runs / plotting utilities (if provided)
-├── outputs/         # Results and figures per dataset
-├── checkpoints/     # Optional: saved models/weights (if used)
+├── outputs/         # Results and figures per dataset (will be automatically created after the program is run for the first time)
+├── checkpoints/     # Optional: saved models/weights
 ├── run_pmlb.py      # ★ Main entry point (supports --help)
 ├── utils.py         # Splits, metrics, calibration, misc helpers
 └── __pycache__/     # Python bytecode cache
 ```
-
----
+The files **Albation Study.xlsx** and **Hyperparameter Experiment.xlsx** record the detailed experimental procedures and results.
 
 ## 7) Citation
 
@@ -138,6 +136,5 @@ If this code is helpful in your research, please cite:
   title        = {MultiPruneEnsemble: Pruning-ensemble with gradient-weighted integration},
   author       = {Yin, Hanyang},
   year         = {2025},
-  note         = {Project Bellerophon},
   howpublished = {\url{https://github.com/suonion/MultiPruneEnsemble}}
 }
